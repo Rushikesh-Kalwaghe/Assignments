@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form tag</title>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <form>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+
+        <label for="email"> Email address:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="mno">Mobile number:</label>
+        <input type="tel" id="mno" name="mno"><br><br>
+
+        <label for="dob">Date of birth:</label>
+        <input type="date" id="date" name="date"><br><br>
+
+        <div>
+            Gender:
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+        </div>
+        <br><br>
+
+        <div>
+            Select a course: <br>
+            <input type="radio" id="cs" name="course" value="cs">
+            <label for="cs">Computer Science Engineering (CSE)</label> <br>
+
+            <input type="radio" id="me" name="course" value="me">
+            <label for="me">Mechanical Engineering (ME)</label><br>
+
+            <input type="radio" id="ee" name="course" value="ee">
+            <label for="ee">Electronics Engineering (EE)</label><br>
+
+            <input type="radio" id="it" name="course" value="it">
+            <label for="it">Information Technology (IT)</label><br>
+
+            <input type="radio" id="ce" name="course" value="ce">
+            <label for="ce">Civil Engineering (CE)</label>
+
+        </div>
+        <br><br>
+
+        <p>Comments:</p>
+        <textarea id="comments" name="comments" rows="4" cols="40"
+            placeholder="You can add additional comments here..."></textarea><br><br>
+
+        <input type="checkbox" id="terms">
+        <label for="terms">I've read and agreed to the terms and conditions.</label><br><br>
+
+        <button type="button" onclick="alert('Form submitted succefully')">Submit</button>
+        <!-- <input type="submit" value="Submit"> -->
+    </form>
+</body>
+
+</html>
